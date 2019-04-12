@@ -7,7 +7,7 @@ Created on Sat May 26 13:57:59 2018
 """
 
 import sys
-sys.path.append("/home/wujiyang/FaceProjects/MTCNN_TRAIN")
+sys.path.append(".")
 
 import cv2
 from tools.detect import create_mtcnn_net, MtcnnDetector

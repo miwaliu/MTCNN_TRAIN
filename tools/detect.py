@@ -330,8 +330,8 @@ class MtcnnDetector(object):
                     crop_im_tensor = image_tools.convert_image_to_tensor(crop_im)
                     # cropped_ims_tensors[i, :, :, :] = crop_im_tensor
                     cropped_ims_tensors.append(crop_im_tensor)
-            except ValueError, e:
-                print e.message
+            except ValueError as e:
+                print(e.message)
             
         feed_imgs = torch.stack(cropped_ims_tensors)
         
@@ -422,8 +422,8 @@ class MtcnnDetector(object):
                     crop_im_tensor = image_tools.convert_image_to_tensor(crop_im)
                     # cropped_ims_tensors[i, :, :, :] = crop_im_tensor
                     cropped_ims_tensors.append(crop_im_tensor)
-            except ValueError, e:
-                print e.message
+            except ValueError as e:
+                print(e.message)
                 
         feed_imgs = torch.stack(cropped_ims_tensors)
 
